@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Joyal Corda - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        cursor: url("./images/FL\ studiocursor.cur"), auto;
+        background-color: rgb(248, 247, 247);
+        color: rgb(5, 5, 5);
+        font-family: "Raleway", sans-serif;
+        overflow-x: hidden;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      nav {
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        background-color: rgb(9, 9, 9);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        cursor: url("./images/FL\ studiocursor.cur"), auto;
+        font-size: 1.02rem;
+        color: rgb(236, 48, 236);
+      }
+      main hr {
+        border: 0;
+        background: black;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .left {
+        font-size: 2rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: -10px 0;
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 3rem;
+        margin: 90px 0;
+      }
+      .rightSection img {
+        width: 110%;
+        margin: 50px;
+        margin-left: -10px;
+      }
+      .purple {
+        color: rgb(236, 48, 236);
+        font-size: 3.5rem;
+      }
+      #element {
+        color: rgb(236, 48, 236);
+      }
+      .secondSection {
+        position: relative;
+        top: -48px;
+        max-width: 80vw;
+        margin: auto;
+        height: 75vh;
+      }
+      .secondSection h1 {
+        font-size: 2rem;
+      }
+      .secondSection .box {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        justify-content: space-around;
+        background: black;
+        width: 80vw;
+        margin: 56px 0px;
+        height: 2px;
+      }
+      .secondSection .vertical {
+        height: 20px;
+        background: black;
+        width: 3px;
+        margin: 0px 100px;
+      }
+      .text-gray {
+        color: grey;
+      }
+      .image-html {
+        width: 80px;
+        position: relative;
+        top: 30px;
+        right: 37px;
+      }
+      .image-css {
+        width: 80px;
+        position: relative;
+        top: 30px;
+        right: 37px;
+      }
+      .image-javascript {
+        width: 80px;
+        position: relative;
+        top: 30px;
+        right: 37px;
+      }
+      .image-python {
+        width: 80px;
+        position: relative;
+        top: 30px;
+        right: 37px;
+      }
+      .image-mongodb {
+        width: 180px;
+        position: relative;
+        top: 40px;
+        right: 97px;
+      }
+      .image-react {
+        width: 90px;
+        position: relative;
+        top: 32px;
+        right: 41px;
+      }
+      .html-title {
+        position: relative;
+        top: 35px;
+        right: 20px;
+      }
+      .css-title {
+        position: relative;
+        top: 34px;
+        right: 15px;
+      }
+      .javascript-title {
+        position: relative;
+        top: 34px;
+        right: 42px;
+      }
+      .reactjs-title {
+        position: relative;
+        top: 34px;
+        right: 32px;
+      }
+      .python-title {
+        position: relative;
+        top: 34px;
+        right: 30px;
+      }
+      .mongodb-title {
+        position: relative;
+        top: 70px;
+        right: 39px;
+      }
+      .second-hr {
+        position: relative;
+        top: -270px;
+      }
+      .third-hr {
+        position: relative;
+        top: -150px;
+      }
+      .thirdSection {
+        position: relative;
+        top: -290px;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: -10px 0;
+        /* background-color: blueviolet; */
+        margin-bottom: -150px;
+        min-height: calc(100vh - 30px);
+      }
+      .thirdSection > div {
+        width: 80%;
+        height: 72%;
+      }
+      .thirdsection-container > h1 {
+        font-size: 2rem;
+      }
+
+      .thirdsection-container {
+        position: relative;
+        top: -90px;
+        right: 5px;
+        /* background-color: brown; */
+      }
+      .card {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        /* background-color: green; */
+        height: 35vh;
+        padding: 10px;
+        margin: 10px;
+        margin-top: 30px;
+        border: solid 10px;
+        border-style: ridge;
+        /* overflow: hidden; */
+      }
+      .card-body {
+        /* background-color: blue; */
+        width: 50vh;
+        text-align: justify;
+        overflow: hidden;
+      }
+      .card-container {
+        display: flex;
+
+        flex-direction: column;
+        margin: 15px;
+        /* background-color: black; */
+        height: 80vh;
+      }
+
+      .image-container {
+        position: relative;
+        top: -50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-shrink: 1;
+        /* background-color: red; */
+        width: 80vh;
+        height: 50vh;
+      }
+      .image {
+        height: 200px;
+        width: auto;
+      }
+      .container {
+        display: flex;
+        overflow-x: scroll;
+        padding: 24px;
+        width: 300px;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 24px;
+        border-radius: 0px;
+        gap: 10px;
+      }
+      .container .item {
+        flex: 0 0 100%;
+        padding: 24px;
+        border-radius: 8px;
+        scroll-snap-align: start;
+        object-fit: contain;
+      }
+      .image-item {
+        height: 200px;
+        width: 300px;
+      }
+      footer {
+        /* margin-top: -80px; */
+
+        height: 40vh !important;
+        margin-top: -10rem;
+        padding: 1rem;
+        background-color: rgb(3, 3, 3);
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+
+      .logos {
+        position: relative;
+        top:60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .instagram {
+        position: relative;
+        height: 50px;
+        left: -5px;
+      }
+      .twitter {
+        position: relative;
+        height: 50px;
+        right: -5px;
+      }
+      .footer-container li a {
+        text-decoration: none;
+        color: white;
+      }
+      .footer-container li {
+        text-decoration: none;
+        color: white;
+        position: relative;
+        top: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Joyal's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/"> Home </a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hello. <br />I'm <span class="purple">Joyal Corda</span> and I am a
+          passionate
+
+          <br />
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="./images/developer.png" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <br />
+        <br />
+        <span class="text-gray">My basic knowledge on these skills..</span>
+        <h1>Skills</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-html" src="./images/html1.png" />
+            <div class="html-title"><h3>HTML</h3></div>
+          </div>
+          <div class="vertical">
+            <img class="image-css" src="./images/css1.png" />
+            <div class="css-title"><h3>CSS</h3></div>
+          </div>
+          <div class="vertical">
+            <img class="image-javascript" src="./images/javascript1.png" />
+            <div class="javascript-title"><h3>JavaScript</h3></div>
+          </div>
+          <div class="vertical">
+            <img class="image-react" src="./images/react1.png" />
+            <div class="reactjs-title"><h3>ReactJs</h3></div>
+          </div>
+          <div class="vertical">
+            <img class="image-python" src="./images/python1.png" />
+            <div class="python-title"><h3>Python</h3></div>
+          </div>
+          <div class="vertical">
+            <img class="image-mongodb" src="./images/mongodb1.png" />
+            <div class="mongodb-title"><h3>MongoDB</h3></div>
+          </div>
+        </div>
+      </section>
+      <br />
+      <br />
+      <hr class="second-hr" />
+      <section class="thirdSection">
+        <div class="thirdsection-container">
+          <span class="text-gray">Some of the work that I've done...</span>
+          <h1>Projects</h1>
+          <div class="card-container">
+            <div class="card">
+              <div class="card-body">
+                <h1>NFT Maker</h1>
+                <br />
+                <br />
+                An app developed by the programming language - "Python" and the
+                with help of the framework - "Kivy" which helps generate random
+                avatar-based pixelated NFT's on a click of a button.
+              </div>
+              <div class="image-container">
+                <img class="image" src="./images/carousel/Screenshot (2).png" />
+                <img class="image" src="./images/carousel/Screenshot (4).png" />
+                <img class="image" src="./images/carousel/Screenshot (3).png" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h1>Sketch Portfolio</h1>
+                <br />
+                <br />
+                This project helps display my love for art containing few of my
+                favourite sketches. if you would like to do something for me i
+                would absoulutley love it
+              </div>
+              <!-- <div class="container">
+                <div class="item">
+                  <img class="image-item" src="./images/carousel/moon.jpg?" />
+                </div>
+                <div class="item"></div>
+                <div class="item"></div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="third-hr" />
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="logos mx-2">
+          <a href="https://www.instagram.com/joyalcorda" target="_blank"><img class="instagram" src="./images/instalogo2.webp" /></a>
+          <a href="https://twitter.com/j3yal" target="_blank"><img class="twitter" src="./images/twitterlogo.png" /></a>
+          
+        </div>
+        <ul>
+          <li><a href="">Info</li></a></li>
+          <br>
+          <li><a href="">Support</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Video Editor", "Web Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
